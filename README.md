@@ -28,5 +28,6 @@ The other build targets are:
 - `gen` for generating the code
 - `clean` for removing the generated code
 - `lint` to run linting
+- `breaking` to check if you are making any changes that will break with the version on the current master branch.
 
 You can either use the Makefile to do your work with `make` or you can use it as documentation for how you perform various operations.
