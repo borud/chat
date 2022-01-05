@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package chatpb.v1;
+
+option go_package = "pkg/chatpb";
+
+import "chatpb/v1/message.proto";
+
+service ChatService {
+	rpc Connection(stream Message) returns (stream Message);
+};

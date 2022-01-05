@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package chatpb.v1;
+
+option go_package = "pkg/chatpb";
+
+message Message {
+	uint64 id = 1;
+	string body = 2;
+}
