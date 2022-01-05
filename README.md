@@ -1,7 +1,9 @@
-# Minimal BSR
+# Chat
 
-This is a minimal example of using the [buf.build](https://buf.build) *Buf Schema Registry* (BSR) to maintain an protobuffer and/or gRPC API.  This
+This is a minimal example of using the [buf.build](https://buf.build) *Buf Schema Registry* (BSR) to maintain a protobuffer and/or gRPC API.  This
 example is going to evolve a bit as I learn more about how to use *buf.build*, but we are going to try to keep it minimal.
+
+You can find this on <https://buf.build/borud/chat>
 
 ## Prerequisites
 
@@ -13,7 +15,7 @@ make dep
 
 which will install the latest version of the `buf` command in your `$GOPATH/bin` directory.
 
-If you do not have Go installed you can check out [the installation instructions on ](https://docs.buf.build/installation)
+If you do not have Go installed you can check out [the installation instructions on](https://docs.buf.build/installation)
 
 ## Linting and building
 

@@ -13,7 +13,7 @@ clean:
 	@rm -rf pkg
 
 breaking:
-	@buf breaking --against "https://github.com/borud/minimum-bsr/archive/main.zip#strip_components=1"
+	@buf breaking --against "https://github.com/borud/chat/archive/main.zip#strip_components=1"
 
 dep:
 	@go install google.golang.org/protobuf/cmd/protoc-gen-go@latest

@@ -1,5 +1,5 @@
 version: v1
-name: buf.build/borud/minimum-bsr
+name: buf.build/borud/chat
 lint:
   use:
     - DEFAULT
