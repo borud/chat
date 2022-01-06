@@ -4,6 +4,12 @@ managed:
   optimize_for: CODE_SIZE
 
 plugins:
+  - remote: buf.build/protocolbuffers/plugins/js:v3.19.2-1
+    out: gen/proto/js
+    opt:
+      - import_style=commonjs
+      - binary
+
   - name: go
     out: gen/proto/go
     opt: paths=source_relative
@@ -12,9 +18,6 @@ plugins:
     out: gen/proto/go
     opt: paths=source_relative,require_unimplemented_servers=false
 
-  - name: java
-    out: gen/proto/java
-  
   - name: nanopb
     out: gen/proto/nanopb
   
