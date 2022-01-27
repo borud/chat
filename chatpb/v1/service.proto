@@ -4,8 +4,17 @@ package chatpb.v1;
 
 option go_package = "pkg/chatpb";
 
+import "google/api/annotations.proto";
 import "chatpb/v1/message.proto";
 
 service ChatService {
 	rpc Connection(stream Message) returns (stream Message);
+	
+	// This is just an example we added to show how dependencies are
+	// handled.  Here we depend on annotations.proto
+	rpc SendMessage(Message) returns (MessageResponse) {
+		option (google.api.http) = {
+            delete : "/messages"
+        };
+	};
 };

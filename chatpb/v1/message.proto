@@ -8,3 +8,6 @@ message Message {
 	uint64 id = 1;
 	string body = 2;
 }
+
+message MessageResponse {
+}
